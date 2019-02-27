@@ -15,5 +15,6 @@ In this assignment Project, the user will have ability to view the latest news t
 
 The app is deployed in Heroku, the accessible link is:
 
-Here's an example for the application in the figures below: <br/>
+Here's an example for the application in the figures below: 
+<br/><br/>
 ![App Example](./images/example.png)
