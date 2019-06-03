@@ -28,7 +28,10 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/newsscraper", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newsscraper";
+
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/newsscraper",);
 
 // Routes
 // Route for main page
@@ -40,6 +43,7 @@ app.get("/", function (req, res) {
       .populate("notes")
       .then(function (dbArticle) {
         // If any Libraries are found, send them to the client with any associated Books
+        console.log(dbArticle)
         res.render("index", { articles: dbArticle });
       })
       .catch(function (err) {
