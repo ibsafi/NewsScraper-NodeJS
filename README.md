@@ -15,8 +15,6 @@ The app runs by navigating into the directory of the app folder, and then type t
 
 * Here's an example for the application in the figures below:
 
-<br/>
-
 ![a Screenshot of application](./images/example.png)
 
 ## Try it on HEROKU:
