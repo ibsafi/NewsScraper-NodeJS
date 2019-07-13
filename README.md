@@ -14,7 +14,9 @@ The app runs by navigating into the directory of the app folder, and then type t
 * The main page of the app is presenting all news that had been saved into the database, and giving the ability to user to add or remove comments on each news.
 
 * Here's an example for the application in the figures below:
+
 <br/>
+
 ![a Screenshot of application](./images/example.png)
 
 ## Try it on HEROKU:
